@@ -1,9 +1,25 @@
-.env
-.vscode
-cache/
-node_modules/
-*.txt
+# Local config
 .DS_Store
+# .vscode
+
+# Dotenv file
+.env
+
+# Local text files
+*.txt
+
+# Dependencies
 node_modules
-lib/forge-std/
+lib
+
+# Compiler files
+cache/
+out/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Logs
 yarn-error.log
